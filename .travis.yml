@@ -5,6 +5,7 @@ language: minimal
 
 jobs:
   include:
+    if: tag IS present
 
     - name: CD
       language: ruby
