@@ -5,7 +5,7 @@
 {% if page.layout == 'home' or page.layout == 'post' %}
   {% if site.google_analytics.pv.enabled %}
     <!-- pv-report needs countup.js -->
-    <script async src="https://cdn.jsdelivr.net/npm/countup.js@1.9.3/dist/countUp.min.js"></script>
+    <script async src="/assets/js/countup.js/countUp.min.js"></script>
     <script async src="{{ '/assets/js/dist/pvreport.min.js' | relative_url }}"></script>
   {% endif %}
 {% endif %}
@@ -23,8 +23,8 @@
 
 {% if page.math %}
   <!-- MathJax -->
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="/assets/js/polyfill/polyfill.min.js"></script>
+  <script defer src="/assets/js/mathjax/tex-mml-chtml.js"></script>
 {% endif %}
 
 {% if jekyll.environment == 'production' %}
